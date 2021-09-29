@@ -1,0 +1,94 @@
+/*    ----------------------------------------estilo para los posteos--------------------------------- */
+.posteo strong { 
+    font-weight: bold;
+}
+
+.posteo em { 
+    font-style: italic;
+}
+
+.posteo h1 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.posteo h2 {
+	font-size: 35px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.posteo h3 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.posteo h4 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.posteo h5 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.posteo h6 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.posteo ol li {
+  list-style-type: decimal;
+}
+
+.posteo ul li {
+   list-style-type: disc;
+}
+
+.posteo ul, ol {
+   margin-left: 0;
+   padding-left: 0;
+}
+.posteo li {
+   margin-left: 2em;
+}
+
+.posteo a {
+   text-decoration: underline;
+}
+.posteo a:link{
+   color: #0000CC;
+}
+.posteo a:visited{
+   color: #6D006D;
+}
+.posteo a:focus{
+   color: #CC0000;
+}
+.posteo a:hover{
+   color: #CC0000;
+}
+.posteo a:active{
+   color: #CC0000;
+   font-style: italic;
+}
+ .posteo table {
+   width: 100%;
+   border: 1px solid #000; 
+}
+.posteo th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+}
+
+
+

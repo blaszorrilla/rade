@@ -1,0 +1,161 @@
+/*---------------------------------------------RADE DE RADE EXP---------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /*background-color: #000;
+  height: 200vh;*/
+  font-family: 'Muli', sans-serif;
+}
+.text {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%) /*translateY(-50%)*/;
+  list-style: none;
+  border-bottom: 0;
+}
+.text.hidden {
+  border-bottom: 0px solid #000;
+}
+.text li {
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  max-width: 2em;
+}
+.text.hidden li.spaced {
+  padding-left: 0;
+}
+.text li.spaced {
+  padding-left: 0.5em;
+}
+
+.text.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+}
+/*---------------------------------------------FIN DE RADE EXP---------------------------------------------*/
+.imagen{
+  	width: 240px;
+  	heigth: 240px;
+}
+.navbar-sidenav h5 {
+	padding: 10px 25px;
+	color: #ffffff;
+	font-size: 13px
+	}
+.navbar-collapse li:hover{
+	/*background: #0c7c8d;
+	border-right: 8px solid #c99950;*/
+    background: #5078a0;
+    border-right: 5px solid #4ea83e;
+	}
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+    
+    /*background: #004551;*/
+    background: #2A3F54!important;
+	}
+.bg-dark {
+    /*background-color: #0a616f!important;*/
+    background-color: #2A3F54!important;
+	}
+.sidenav-toggled .navbar-sidenav h5{
+	display: none;
+	}
+.navbar-collapse span{
+	color: #ffffff;
+	}
+.navbar-collapse i{
+	color: #fff;
+	}
+.nav-item {
+	background: #2A3F54;
+    /*background: #0a616f;*/
+    }
+.modal-content {
+	background-color: #ffffff;
+	width: 100%;
+	}
+
+.modal-dialog {
+    top: 30%;
+    
+    }
+.fade {
+    transition: opacity 0.5s linear;
+	}
+
+@media (max-width: 426px) {
+
+
+.navbar-collapse ul{
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	}
+.navbar-collapse h5 {
+	display:none;
+	}
+.navbar-collapse li{
+    
+	text-align: center;
+	flex-grow: 1;
+	position: flex;
+    display: block;
+	color: #ffffff;
+	}
+.navbar-collapse li:hover{
+	border-right: 0px;
+	border-bottom: 2px solid #4ea83e;
+	/*border-bottom: 2px solid #c99950;*/
+	}
+.navbar-collapse li a{
+	font-size: 20px !important;
+	
+	}
+.navbar-collapse li a span{
+	display: none;
+	}
+.navbar-collapse{
+	flex-direction: row;
+	display: flex;
+	}
+.ml-auto ul{
+    margin: 0px;  
+    }
+.navbar-brand{
+	display: none;
+	}
+.navbar-toggler-right{
+	display: none;
+	}
+.fixed-top .logo a{
+	display: none;
+	}
+.exp{
+	display: none;
+}
+
+}
+
+@media (max-width: 991px) {
+	
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+		transition: all 0.5s;
+	}
+.navbar-collapse h5 {
+	display:none;
+	}
+.ghost a{
+	display: none;
+	}
+}

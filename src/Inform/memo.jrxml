@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="memo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4760d592-4f7d-4220-b480-3ef4f04995ae">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="para" class="java.lang.String"/>
+	<parameter name="de" class="java.lang.String"/>
+	<parameter name="asunto" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<parameter name="cargo" class="java.lang.String"/>
+	<parameter name="empresa" class="java.lang.String"/>
+	<parameter name="texto" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="148" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="70" width="300" height="65" uuid="f6126277-edbc-4ff2-ac86-1c92a4d46abe"/>
+				<textElement>
+					<font size="44" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Memorando]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="320" y="10" width="210" height="50" uuid="c3c266ed-cc82-4ca3-a9cf-7fe31c6515fe"/>
+				<textElement textAlignment="Right">
+					<font size="15" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="502" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="10" width="80" height="20" uuid="f894cb60-2e5b-4191-9038-177fdc02f5d3"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Para:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="40" width="80" height="20" uuid="b03fbf47-0bae-455a-ac1f-cb7a370c6255"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[De:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="70" width="80" height="20" uuid="aeee8609-a728-4a83-85ba-7cc1eed33c1a"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="100" width="80" height="20" uuid="842480c6-906b-4635-9d1f-b325927577d0"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Asunto:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="40" y="140" width="490" height="1" uuid="434fa9f4-e73a-4c94-b5c2-4cce651fe41d"/>
+			</line>
+			<textField>
+				<reportElement x="120" y="10" width="210" height="20" uuid="bc26a02f-cae9-44f1-9cf4-9bddb524eca9"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{para}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="40" width="210" height="20" uuid="f89506a7-0bb5-4fe7-a91d-c46a5c5d5cec"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{de}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="100" width="210" height="20" uuid="39e3a1cf-0f22-4705-9daa-4e3708856ca7"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{asunto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="70" width="210" height="20" uuid="f5151106-9deb-4263-a9f2-14e3af653abc"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="392" width="210" height="47" uuid="ae901ee4-1c92-4e83-8514-38219b5b19be"/>
+				<textElement textAlignment="Center">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cargo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="169" width="490" height="169" uuid="4f37821e-fab0-4583-afbd-81390ec94a7f"/>
+				<textElement textAlignment="Justified">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{texto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="368" width="210" height="20" uuid="be475dd0-f51c-44b6-b44b-23fdb2d390c0"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{de}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

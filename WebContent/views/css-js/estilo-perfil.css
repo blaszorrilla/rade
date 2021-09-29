@@ -1,0 +1,49 @@
+#per {
+	background-color: #227ed2;
+}
+#datosPerfil {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #227ed2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#con {
+	background-color: #4dd06b;
+}
+#configurar {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #4dd06b;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#camdat {
+	background-color: #227ed2;
+}
+#cambiodate{
+	padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #227ed2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#camfoto {
+	background-color: #4dd06b;
+}
+#fotocam {
+	/*padding: 0.75rem 1.25rem;*/
+    margin-bottom: 0;
+    background-color: #4dd06b;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.colorP{
+	background-color: #e9ecef;
+}
+.titu {
+	color: #0062cc;
+	font: bold;
+	font-size: 20px;
+	font-family: 'Muli', sans-serif;
+}
+.btncon {
+	margin-left: 50%;
+	transform: translateX(-50%);
+}

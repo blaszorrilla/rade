@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tema" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6f64a59-073a-4b52-bb77-ccc3c7620f9d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="SQL">
+		<![CDATA[select tema,estado from temas]]>
+	</queryString>
+	<field name="tema" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tema"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="temas"/>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="temas"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="160" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="81" height="81" uuid="9c5ce8b2-13dd-4d28-b229-cca3398c7956"/>
+				<imageExpression><![CDATA["/home/rade/Escritorio/EDAR/rade/WebContent/views/images/Logoo_rade-copia.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="90" y="13" width="210" height="25" uuid="a12e1152-bf4b-42d2-8fd4-3d5c19b06927">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Serif" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RADE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="38" width="205" height="15" uuid="b2ea9c90-2992-4778-8b56-247411e1870f"/>
+				<textElement>
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Recurso Academico Digital Especifico]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="53" width="205" height="15" uuid="a2a74d60-08be-41f8-9207-bc73ccf486ae"/>
+				<textElement>
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[www.rade.com.py]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="68" width="205" height="15" uuid="c33d0ca2-f790-4ad4-a1b4-f2a74d56477f"/>
+				<textElement>
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Encarnación - Paraguay ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="23" width="50" height="20" uuid="47543669-5d16-4d56-be57-ba60de195dd2"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Right">
+					<font fontName="Serif"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="460" y="23" width="84" height="20" uuid="1fee7360-71ce-4360-bd5c-0e8562c66e0b"/>
+				<textElement>
+					<font fontName="Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="5" y="85" width="556" height="1" uuid="7ee58905-35f0-45fa-87e7-efd225df0540">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="80" y="100" width="401" height="21" uuid="94be50a2-ae26-49a3-aac6-78cb7d1c67a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INFORME DE TEMAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="130" width="160" height="30" uuid="a270503e-e399-42fe-8cac-11ed9e9a52f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6f3f7eb3-6b36-455e-a105-5ab89f70b557"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="130" width="100" height="30" uuid="595f4da2-c255-4588-baf5-39126a3ea1e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e81a683-308b-4320-86b0-77852eb95298"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTADO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="10" width="160" height="30" uuid="c58d7753-e1cc-4621-9673-0932b1655c01">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6f3f7eb3-6b36-455e-a105-5ab89f70b557"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tema}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="10" width="100" height="30" uuid="8572fb35-bd54-42eb-a417-ca0336d90356">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e81a683-308b-4320-86b0-77852eb95298"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

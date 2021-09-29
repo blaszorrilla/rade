@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<!--
+
+    configuration file for urlRewriteFilter
+a-z0-9
+-->
+<urlrewrite>
+ <rule match-type="regex">
+  		<condition type="request-uri" operator="notequal">^/(.*)(gif|jpe?g|png|css|js|woff2|min|map|ttf|ico|woff|otf|eot|svg|jrxml|jasper|pdf)$</condition>
+    	<from>^/([A-Z]+)</from> <!-- Aqui capturamos el valor de la url para la redireccion -->
+    	<to>/index?action=$1</to> <!-- Aqui rediccionamos a index todo lo que vaya ingresando como valor unico -->
+   </rule>
+	
+
+</urlrewrite>
