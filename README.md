@@ -1,5 +1,10 @@
 # rade
 R.A.D.E: "Recursos académicos digitales específicos" foro estudiantil desarrollado para compartir conocimientos y recursos con estudiantes de diversas facultades y sedes de la Universidad Tecnológica Intercontinental
+- Tecnologías:
+- Java server page, jdk 1.80_171
+- MySQL 5.7 
+- Bootstrap 4
+- Jasper Reports 6.2.0
 - Módulos:
 
 1. Login
